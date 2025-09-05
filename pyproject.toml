@@ -1,0 +1,18 @@
+[project]
+name = "search-module"
+version = "0.1.0"
+description = "Search data like a cool kid at work"
+readme = "README.md"
+authors = [{ name = "dinhanhx", email = "dinhanhx@gmail.com" }]
+requires-python = ">=3.10"
+dependencies = [
+    "qdrant-client==1.14.3",
+    "elasticsearch==8.7.0",
+    "python-dotenv",
+    "requests",
+    "more-itertools",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
