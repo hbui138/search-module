@@ -24,7 +24,7 @@ db_name = "legal_corpus"
 queries_path = r"d:\Work\VLSP\Dataset\train.json"
 queries_data = json.loads(Path(queries_path).read_text(encoding="utf-8"))
 queries = [{"qid": item["qid"], "question": item["question"]} for item in queries_data]
-queries = queries[:100]  # For testing, limit to 50 items
+queries = queries[:50]  # For testing, limit to 50 items
 
 print("Queries size:", len(queries))
 
